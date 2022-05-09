@@ -1,12 +1,6 @@
-// document.onkeydown = function(event) {
-//   console.log(event)
-//   keyboard.push(event.charCode)
-//   console.log(keyboard)
-// }
-
 document.body.innerHTML = `
 <h1> RSS Virtual keyboard </h1>
-<textarea class = 'textarea' rows = 6 placeholder = 'press alt + shift for change language'></textarea>
+<textarea class = 'textarea' rows = 6 placeholder = 'press left alt + shift for change language'></textarea>
 <div id = 'eng' class = 'keyboard'>
   <div class = 'line'>
     <div class = 'key dark' data = "Backquote">&#126;</div>
@@ -163,26 +157,36 @@ document.body.innerHTML = `
 </div>
 `;
 
-document.onkeydown = function(event) {
-  document.querySelectorAll('.key').forEach((elem) => elem.classList.remove('active'))
-  document.querySelector(`.key[data = ${event.code}]`).classList.add('active') 
-}
+document.onkeydown = function (event) {
+  document.querySelectorAll('.key').forEach((elem) => elem.classList.remove('active'));
+  document.querySelector(`.key[data = ${event.code}]`).classList.add('active');
+};
 
-document.querySelectorAll('.key').forEach(function(element){
-  element.addEventListener('click',function() {
-  document.querySelectorAll('.key').forEach((elem) => elem.classList.remove('active'))
-  let code = this.getAttribute('data');
-  this.classList.add('active')
-  })
-})
+document.querySelectorAll('.key').forEach((element) => {
+  element.addEventListener('click', function () {
+    document.querySelectorAll('.key').forEach((elem) => elem.classList.remove('active'));
+    const code = this.getAttribute('data');
+    this.classList.add('active');
+  });
+});
 
-// let eng = document.getElementById('eng')
-// let ru = document.getElementById('ru')
+let eng = document.getElementById('eng')
+let ru = document.getElementById('ru')
 
-// document.addEventListener('keyup', function(event){
-//   if(event.code === "AltLeft" && event.code === "ShiftLeft") {
-//     eng.classList.toggle('keyboard invisible')
-//     ru.classList.toggle('keyboard invisible')
-//   }
-// })
+document.addEventListener('keydown', (event) => {
+  console.log(event.code);
 
+  if (event.altKey && event.shiftKey) {
+    console.log('here');
+    if (ru.classList.contains('invisible')) {
+      eng.classList.add('invisible');
+      ru.classList.remove('invisible');
+    } else {
+      eng.classList.remove('invisible');
+      ru.classList.add('invisible');
+    }
+  }
+});
+
+// let textarea = document.querySelector('.textarea')
+// textarea.innerHTML =
