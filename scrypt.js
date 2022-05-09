@@ -63,7 +63,7 @@ document.body.innerHTML = `
     <div class = 'key' data = "Comma">,</div> 
     <div class = 'key' data = "Period">.</div> 
     <div class = 'key' data = "Slash">/</div> 
-    <div class = 'key dark' data = "ArrowUp">AU</div> 
+    <div class = 'key dark' data = "ArrowUp">&#129093;</div> 
     <div class = 'key dark' data = "ShiftRight">Shift</div> 
   </div>
   <div class = 'line'>
@@ -73,9 +73,9 @@ document.body.innerHTML = `
   <div class = 'key space' data = "Space">Space</div> 
   <div class = 'key rightAlt dark'data = "AltRight">Alt</div> 
   <div class = 'key rightCtrl dark' data = "ControlRight">Ctrl</div> 
-  <div class = 'key dark' data = "ArrowLeft">AL</div>
-  <div class = 'key dark' data = "ArrowDown">AD</div> 
-  <div class = 'key dark' data = "ArrowRight">AR</div> 
+  <div class = 'key dark' data = "ArrowLeft">&#129092;</div>
+  <div class = 'key dark' data = "ArrowDown">&#129095;</div> 
+  <div class = 'key dark' data = "ArrowRight">&#129094;</div>
 </div>
 </div>
 <div id = 'ru' class = 'keyboard invisible'>
@@ -140,7 +140,7 @@ document.body.innerHTML = `
     <div class = 'key' data = "Comma">б</div> 
     <div class = 'key' data = "Period">ю</div> 
     <div class = 'key' data = "Slash">.</div> 
-    <div class = 'key dark' data = "ArrowUp">AU</div> 
+    <div class = 'key dark' data = "ArrowUp">&#129093;</div> 
     <div class = 'key dark' data = "ShiftRight">Shift</div> 
   </div>
   <div class = 'line'>
@@ -150,9 +150,9 @@ document.body.innerHTML = `
   <div class = 'key space' data = "Space">Space</div> 
   <div class = 'key rightAlt dark'data = "AltRight">Alt</div> 
   <div class = 'key rightCtrl dark' data = "ControlRight">Ctrl</div> 
-  <div class = 'key dark' data = "ArrowLeft">AL</div>
-  <div class = 'key dark' data = "ArrowDown">AD</div> 
-  <div class = 'key dark' data = "ArrowRight">AR</div> 
+  <div class = 'key dark' data = "ArrowLeft">&#129092;</div>
+  <div class = 'key dark' data = "ArrowDown">&#129095;</div> 
+  <div class = 'key dark' data = "ArrowRight">&#129094;</div> 
 </div>
 </div>
 `;
