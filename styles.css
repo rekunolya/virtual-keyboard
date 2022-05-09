@@ -1,0 +1,77 @@
+body{
+    margin: 0 auto;
+    
+}
+h1{
+    margin-top: 20px;
+    color: rgb(38, 124, 124);
+    text-align: center;
+
+}
+.keyboard{
+    width: 800px;
+    margin: 0 auto;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 10px;
+  }
+.line{
+    display: flex;
+    grid-template-columns: 15;
+    grid-template-rows: 1;
+    grid-column-gap: 7px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+  
+.key{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px black dashed;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: rgb(93, 93, 93);
+  }
+
+.key:hover{
+    cursor: pointer;
+    background-color: rgb(110, 143, 143);
+}
+  
+.tab, .del{
+    width: 60px;
+  }
+  
+.capsLock, .enter, .shift{
+    width: 80px;
+  }
+  
+.space{
+    width: 400px
+  }
+.backspace{
+      width: auto;
+  }
+.dark {
+    background-color: rgb(39, 38, 38);
+}
+.textarea{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 816px;
+    margin: 0 auto 20px; 
+    text-align: center;
+}
+.active{
+    color: darkgray;
+    background-color: greenyellow;
+}
+
+.invisible{
+    display: none;
+}
